@@ -1,7 +1,7 @@
 [
   {"date":"2025-01-13", "text": "I am thrilled to announce that I am starting a new position as Junior AI Engineer at [RoboFication LLC](https://robofication.net/)."},
   {"date":"2024-08-31", "text": "My recent research titled, [Automatic Differential Diagnosis using Transformer-Based Multi-Label Sequence Classification](https://doi.org/10.48550/arXiv.2408.15827), was recently published as a preprint on arXiv."},
-  { "date": "2024-07-12", "text": "[Presented](public/assets/SAI2024Certificate.pdf) our paper at SAI Computing Conference 2024."},
+  { "date": "2024-07-12", "text": "[Presented](/assets/SAI2024Certificate.pdf) our paper at SAI Computing Conference 2024."},
   { "date": "2024-06-28", "text": "Our study focusing on performing a comparative analysis of object detection models for the task of plant disease detection was recently published in the [SAI Computing Conference 2024](https://doi.org/10.1007/978-3-031-62269-4_29)." },
   { "date": "2023-09-10", "text": "Our extension work on visual pollution detection was recently published in the [Decision Analytics Journal](https://doi.org/10.1016/j.dajour.2023.100283)." },
   { "date": "2023-09-01", "text": "I started working as a research assistant at NSU under the supervision of [Dr. Mohammad Ashrafuzzaman Khan](http://ece.northsouth.edu/people/dr-mohammad-ashrafuzzaman-khan/)." },
