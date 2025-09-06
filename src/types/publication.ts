@@ -27,5 +27,6 @@ export type Pub = {
   thumbnail?: string;
   citationCount?: number | null;
   selected?: boolean;
+  scholarUrl?: string;
   buttons: Btn[];
 };

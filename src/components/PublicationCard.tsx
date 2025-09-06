@@ -86,16 +86,21 @@ export default function PublicationCard({ pub }: { pub: Pub }) {
               </button>
             ))}
 
-            <div className="ml-auto">
-              <img
-                src="scholar-logo.svg"
-                alt="Scholar Icon"
-                className="inline-block w-6 h-6 mr-1"
-              />
-              <span className="text-sm text-muted text-emerald-600 dark:text-emerald-400 mt-3">
+            {pub.scholarUrl && (
+              <a
+                href={pub.scholarUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-auto flex items-center text-sm font-medium text-emerald-600 dark:text-emerald-400 hover:underline"
+              >
+                <img
+                  src="scholar-logo.svg"
+                  alt="Scholar Icon"
+                  className="inline-block w-5 h-5 mr-1"
+                />
                 Citations: {pub.citationCount ?? "N/A"}
-              </span>
-            </div>
+              </a>
+            )}
           </div>
 
           {/* Toggle area */}

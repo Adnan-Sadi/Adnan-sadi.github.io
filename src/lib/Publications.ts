@@ -54,6 +54,7 @@ function normalizePub(p: RawPub): Pub {
     thumbnail: p.thumbnail || undefined,
     citationCount: typeof p.citationCount === 'number' ? p.citationCount : null,
     selected: !!p.selected,
+    scholarUrl: p.scholarUrl || undefined,
     buttons: normalizeButtons(p.buttons),
   };
 }

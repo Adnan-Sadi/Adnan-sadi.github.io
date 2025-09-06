@@ -40,18 +40,18 @@ export default function Home() {
               Email
             </a>
             <a
+              href={profile.social.scholar}
+              target="_blank"
+              className="rounded-full border px-3 py-1 text-xs no-underline hover:bg-foreground/5"
+            >
+              Google Scholar
+            </a>
+            <a
               href={profile.social.linkedin}
               target="_blank"
               className="rounded-full border px-3 py-1 text-xs no-underline hover:bg-foreground/5"
             >
               LinkedIn
-            </a>
-            <a
-              href={profile.social.scholar}
-              target="_blank"
-              className="rounded-full border px-3 py-1 text-xs no-underline hover:bg-foreground/5"
-            >
-              Scholar
             </a>
             <a
               href={profile.social.researchgate}
