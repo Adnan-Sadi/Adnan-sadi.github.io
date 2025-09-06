@@ -1,69 +1,91 @@
-# React + TypeScript + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository hosts the source code for my personal website, built with **React + Vite + Tailwind CSS**, and deployed via **GitHub Pages** at: **[adnan-sadi.github.io](https://adnan-sadi.github.io/)**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Light/Dark Mode** with toggle (default dark)
+- **Responsive design** using Tailwind CSS
+- **About Page**  
+  – Photo, introduction, profile links (Email, LinkedIn, Scholar, ResearchGate, GitHub, etc.)  
+  – Recent updates / news section.  
+  – Selected publications
+- **Publications Page**  
+  – Publication cards with preview image, metadata, author highlighting  
+  – Customizable buttons for abstract, BibTeX, PDF, code/demo links, etc.
+  – Google Scholar citation badge (clickable → opens article on Scholar)  
+  – Fullscreen view for preview image (on click)
+- **News Page** with full archive of updates
+- **CV Page** with in-browser PDF viewer and download option
+- **Projects Page** Coming Soon!
+- Easy to modify **JSON data files** for updating website data.
+- **Deployment** via GitHub Actions → GitHub Pages
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/) 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Development
+
+### Prerequisites
+- Node.js (Version Userd=23.6.0)
+- npm (Version Used=10.9.2)
+
+### Setup
+```bash
+git clone https://github.com/Adnan-Sadi/Adnan-sadi.github.io.git
+cd Adnan-sadi.github.io
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Run locally
+```bash
+npm run dev
 ```
+
+---
+
+## Deployment
+
+This repo is deployed automatically to GitHub Pages via Actions. Any push to `main` triggers the `.github/deploy.yaml` workflow.
+
+---
+
+## Repository Structure
+
+```
+├── .github/
+│   ├── deploy.yaml   
+├── public/                # Static assets
+├── src/
+│   ├── components/        # Shared React components
+│   ├── data/              # JSON data (news, publications, profile)
+│   ├── lib/               # Utility functions
+│   ├── pages/             # Page components
+│   ├── index.css          # Tailwind entry
+│   └── main.tsx           # App entry point
+├── tailwind.config.js     # Tailwind config
+├── postcss.config.cjs     # PostCSS config
+├── postbuild.cjs
+├── vite.config.ts         # Vite config
+├── package-lock.json
+└── package.json
+```
+
+---
+
+## License
+
+This repository is open-sourced under the MIT license.  
+Feel free to use this as a template for your own site (attribution is appreciated).
+
+---
