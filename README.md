@@ -20,7 +20,7 @@ This repository hosts the source code for my personal website, built with **Reac
 - **News Page** with full archive of updates
 - **CV Page** with in-browser PDF viewer and download option
 - **Projects Page** Coming Soon!
-- Easy to modify **JSON data files** for updating website data.
+- Easy to modify **JSON files** for updating website data.
 - **Deployment** via GitHub Actions → GitHub Pages
 
 ---
