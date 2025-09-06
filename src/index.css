@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255 255 255;
+  --foreground: 17 24 39;
+  --card: 249 250 251;
+  --muted: 107 114 128;
+}
+.dark {
+  --background: 17 24 39;
+  --foreground: 243 244 246;
+  --card: 31 41 55;
+  --muted: 156 163 175;
+}
+
+/* Create real Tailwind utilities for your tokens */
+@layer utilities {
+  .bg-background { background-color: rgb(var(--background) / 1); }
+  .text-foreground { color: rgb(var(--foreground) / 1); }
+  .bg-card { background-color: rgb(var(--card) / 1); }
+  .text-muted { color: rgb(var(--muted) / 1); }
+}
+
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+a {
+  @apply underline underline-offset-2 hover:opacity-80;
+}
