@@ -84,10 +84,10 @@ export default function Home() {
         <div className="space-y-2">
           <h1 className="text-2xl font-semibold tracking-tight">About</h1>
           <p className="leading-relaxed">
-            Welcome! I am Abu Adnan Sadi. I’m a Ph.D. student at DePaul
+            Hi! I am Abu Adnan Sadi. I’m a Ph.D. student at DePaul
             University advised by{" "}
             <a
-              href="https://www.cdm.depaul.edu/faculty-info/Pages/faculty-member.aspx?fid=1234"
+              href="https://www.caseybennett.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline underline-offset-2 hover:text-foreground"
@@ -97,9 +97,8 @@ export default function Home() {
             . I completed my B.Sc. in computer science and engineering from
             North South University. My research interest is primarily in areas
             related to natural language processing (NLP), deep learning, and
-            computer vision. I also have an interest in the healthcare
-            informatics domain. My current research is primarily centered around
-            AI and its application in the healthcare domain.
+            computer vision. I have a particular interest in the AI for healthcare
+            domain. My current research is in conversational AI and its application in the healthcare domain.
           </p>
         </div>
 
