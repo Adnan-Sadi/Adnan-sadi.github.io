@@ -1,5 +1,5 @@
 import raw from '../data/publications.json';
-import type { Pub, Btn } from '../types/publication';
+import type { Pub, Btn, ScholarStats } from '../types/publication';
 
 type RawBtn = {
   kind?: string;
@@ -59,7 +59,23 @@ function normalizePub(p: RawPub): Pub {
   };
 }
 
+type RawData = {
+  stats: { hIndex: number; i10Index: number };
+  publications: RawPub[];
+};
+
 export function getPublications(): Pub[] {
-  const arr = (raw as unknown as RawPub[]) || [];
-  return arr.map(normalizePub);
+  const data = raw as unknown as RawData;
+  return data.publications.map(normalizePub);
+}
+
+export function getScholarStats(): ScholarStats {
+  const data = raw as unknown as RawData;
+  const pubs = data.publications;
+  const totalCitations = pubs.reduce((sum, p) => sum + (p.citationCount ?? 0), 0);
+  return {
+    totalCitations,
+    hIndex: data.stats.hIndex,
+    i10Index: data.stats.i10Index,
+  };
 }

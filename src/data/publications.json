@@ -1,4 +1,9 @@
-[
+{
+  "stats": {
+    "hIndex": 3,
+    "i10Index": 3
+  },
+  "publications": [
   {
     "id": "add-2024",
     "title": "Automatic Differential Diagnosis using Transformer-Based Multi-Label Sequence Classification",
@@ -7,7 +12,7 @@
     "date": "2024-08-28",
     "year": 2024,
     "thumbnail": "/assets/previews/add-preview.png",
-    "citationCount": 2,
+    "citationCount": 3,
     "selected": true,
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jNtX0U4AAAAJ&citation_for_view=jNtX0U4AAAAJ:2osOgNQ5qMEC",
     "buttons": [
@@ -25,7 +30,7 @@
     "date": "2024-06-20",
     "year": 2024,
     "thumbnail": "/assets/previews/conf-plant-2024-preview.png",
-    "citationCount": 1,
+    "citationCount": 2,
     "selected": false,
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jNtX0U4AAAAJ&citation_for_view=jNtX0U4AAAAJ:9yKSN-GCB0IC",
     "buttons": [
@@ -43,7 +48,7 @@
     "date": "2023-09-01",
     "year": 2023,
     "thumbnail": "/assets/previews/vispol-2023-preview.jpg",
-    "citationCount": 10,
+    "citationCount": 13,
     "selected": true,
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jNtX0U4AAAAJ&citation_for_view=jNtX0U4AAAAJ:u5HHmVD_uO8C",
     "buttons": [
@@ -61,7 +66,7 @@
     "date": "2022-12-24",
     "year": 2022,
     "thumbnail": "/assets/previews/lmfloss-preview.png",
-    "citationCount": 28,
+    "citationCount": 35,
     "selected": true,
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jNtX0U4AAAAJ&citation_for_view=jNtX0U4AAAAJ:u-x6o8ySG0sC",
     "buttons": [
@@ -79,7 +84,7 @@
     "date": "2021-12-01",
     "year": 2021,
     "thumbnail": "/assets/previews/vispol-2021-preview.jpg",
-    "citationCount": 9,
+    "citationCount": 10,
     "selected": false,
     "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jNtX0U4AAAAJ&citation_for_view=jNtX0U4AAAAJ:d1gkVwhDpl0C",
     "buttons": [
@@ -90,3 +95,4 @@
     ]
   }
 ]
+}

@@ -22,7 +22,7 @@ export default function ThemeToggle() {
       aria-label="Toggle theme"
       title="Toggle theme"
     >
-      {theme === "dark" ? "🌕Light" : "🌑Dark"}
+      {theme === "dark" ? "🌕 Light" : "🌑 Dark"}
     </button>
   );
 }

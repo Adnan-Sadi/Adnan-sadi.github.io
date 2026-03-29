@@ -30,3 +30,9 @@ export type Pub = {
   scholarUrl?: string;
   buttons: Btn[];
 };
+
+export type ScholarStats = {
+  totalCitations: number;
+  hIndex: number;
+  i10Index: number;
+};
